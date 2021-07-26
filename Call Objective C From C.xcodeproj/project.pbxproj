@@ -43,7 +43,6 @@
 		5B0B58A426AF2FD5006AD153 /* SwiftFromC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftFromC; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0B58A626AF2FD5006AD153 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5B0B58AE26AF3012006AD153 /* lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lib.m; sourceTree = "<group>"; };
-		5B0B58B326AF303F006AD153 /* SwiftFromC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFromC-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B0B58B426AF303F006AD153 /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
 		5B0B58BC26AF30C8006AD153 /* lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +100,6 @@
 				5B0B58AE26AF3012006AD153 /* lib.m */,
 				5B0B58BC26AF30C8006AD153 /* lib.h */,
 				5B0B58B426AF303F006AD153 /* lib.swift */,
-				5B0B58B326AF303F006AD153 /* SwiftFromC-Bridging-Header.h */,
 			);
 			path = SwiftFromC;
 			sourceTree = "<group>";
@@ -341,8 +339,9 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFromC/SwiftFromC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -359,7 +358,8 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFromC/SwiftFromC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
