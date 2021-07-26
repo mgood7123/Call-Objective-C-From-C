@@ -1,14 +1,16 @@
 //
 //  main.cpp
-//  Call Objective C From C
+//  ObjC
 //
 //  Created by Matthew Good on 27/7/21.
 //
 
-#include <iostream>
+#include <stdio.h>
+
+#include "lib.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    printf("HELLO FROM C++\n");
+    callFromCpp("called from C++");
     return 0;
 }
